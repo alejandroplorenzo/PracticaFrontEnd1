@@ -1,0 +1,81 @@
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+}
+
+button.primary {
+  background-color: red;
+  color: white;
+}
+
+button.primary:hover {
+  background-color: violet;
+  color: white;
+}  
+
+button.primary:active {
+  background-color: white;
+  color: red;
+}
+
+button.secondary {
+  background-color: blue;
+  color: white;
+}
+
+button.secondary:hover {
+  background-color: green;
+  color: white;
+} 
+
+button.secondary:active {
+  background-color: white;
+  color: blue;
+}
+
+@keyframes example {
+  from {background-color: white;}
+  to {background-color: rgb(100, 149, 237);}
+}
+
+.a {
+  width: 200px;
+  height: 250px;
+  transition: width 2s, height 4s;
+}
+
+.a:hover {
+  width: 300px;
+  height: 350px;
+}
+
+.b {
+  width: 200px;
+  height: 250px;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.b:hover {
+  width: 200px;
+  height: 250px;
+  transform: rotate(360deg);
+}
+
+.c {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  animation-name: movimiento;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes movimiento {
+  0%   {left:-450px; top:220px;}
+  50%  {left: 450px; top:220px;}
+  100% {left:-450px; top:220px;}
+}
